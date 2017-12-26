@@ -1,0 +1,17 @@
+{{ partialCached "header/head.html" . }}
+
+  <div id="main">
+    <h1 class="animated flipInX"><a href="/">{{ .Title }}</a></h1>
+    <div class="talkies">
+        {{ .Content }}
+    </div>
+
+    {{ partialCached "social.html" . }}
+  </div>
+
+  
+
+
+
+{{ partial "sidemenu.html" . }}
+{{ partialCached "footer/foot.html" . }}

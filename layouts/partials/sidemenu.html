@@ -1,0 +1,28 @@
+<div id="sidebar">
+  <a href="/img/{{ $.Site.Params.portrait }}" class="image-link">
+    <img class="logo animated flipInY" src="/img/{{ $.Site.Params.portrait }}"/>
+  </a>
+
+  <h2>URLs</h2>
+  <ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="https://blog.sakibccr.com/">All Articles</a></li>
+    <li><a href="https://sakibccr.com/photos/">Photos</a></li>
+    <li><a href="https://sakibccr.com/photos/">Résumé</a></li>
+  </ul>
+
+  <h2>Recent posts</h2>
+  <ul>
+    {{ range first 10 .Site.RegularPages }}
+      {{ if eq .Type "posts" }}
+        <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+      {{ end }}
+    {{ end }}
+  </ul>
+
+  <h2>Projects</h2>
+  <ul>
+      <li><a href="/">Improved subdl</a></li>
+      <li><a href="/">Python Only</a></li>
+  </ul>
+</div>
