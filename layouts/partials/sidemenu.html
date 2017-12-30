@@ -1,7 +1,9 @@
 <div id="sidebar">
+  {{ if $.Site.Params.portrait }}
   <a href="/img/{{ $.Site.Params.portrait }}" class="image-link">
     <img class="logo animated flipInY" src="/img/{{ $.Site.Params.portrait }}"/>
   </a>
+  {{ end }}
 
   <h2>URLs</h2>
   <ul>

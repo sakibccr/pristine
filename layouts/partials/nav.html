@@ -1,10 +1,12 @@
 <!-- appears only in smaller screen -->
 
 <div id="nav">
+  {{ if $.Site.Params.portrait }}
   <a href="/img/{{ $.Site.Params.portrait }}" class="image-link">
     <img class="logo animated flipInY" src="/img/{{ $.Site.Params.portrait }}"/>
   </a>
-
+  {{ end }}
+  
   <ul>
     <li><a href="/">Home</a></li>
     <li><a href="https://blog.sakibccr.com/">All Articles</a></li>
