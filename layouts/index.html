@@ -1,6 +1,7 @@
 {{ partialCached "header/head.html" . }}
 
   <div id="main">
+    {{ partial "nav.html" . }}
     <h1 class="animated flipInX"><a href="/">{{ .Title }}</a></h1>
     <div class="talkies">
         {{ .Content }}
