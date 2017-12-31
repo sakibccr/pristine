@@ -8,10 +8,11 @@
   {{ end }}
   
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="https://blog.sakibccr.com/">All Articles</a></li>
-    <li><a href="https://sakibccr.com/photos/">Photos</a></li>
-    <li><a href="https://sakibccr.com/photos/">Résumé</a></li>
+    {{ range .Site.Menus.main }}
+      <li><a href="{{.URL}}">
+          <span>{{ .Name }}</span>
+      </a></li>
+    {{end}}
   </ul>
 
 </div>

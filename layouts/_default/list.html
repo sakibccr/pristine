@@ -1,0 +1,27 @@
+{{ partialCached "header/head.html" . }}
+
+  <div id="main">
+    {{ partial "nav.html" . }}
+
+
+    <h2>All posts</h2>
+      <ul>
+        {{ range .Site.RegularPages }}
+          {{ if eq .Type "posts" }}
+            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+          {{ end }}
+        {{ end }}
+      </ul>
+
+
+    {{ if isset .Site.Params "social" }}
+        {{ partialCached "social.html" . }}
+    {{ end }}
+  </div>
+
+  
+
+
+
+{{ partial "sidemenu.html" . }}
+{{ partialCached "footer/foot.html" . }}

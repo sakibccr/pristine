@@ -19,6 +19,8 @@ img,
 svg,
 video {
     vertical-align: middle;
+    width: 100%;
+    margin: 20px 5px;
 }
 
 
@@ -30,7 +32,11 @@ video {
     padding: 0.2em 0;
 }
 
-
+h3 {
+    margin-top: 25px;
+    color: #303030;
+    font-family: 'Source Serif Pro', serif;
+}
 
 
 #main,

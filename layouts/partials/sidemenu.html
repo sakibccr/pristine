@@ -7,10 +7,9 @@
 
   <h2>URLs</h2>
   <ul>
-    <li><a href="/">Home</a></li>
-    <li><a href="https://blog.sakibccr.com/">All Articles</a></li>
-    <li><a href="https://sakibccr.com/photos/">Photos</a></li>
-    <li><a href="https://sakibccr.com/photos/">Résumé</a></li>
+    {{ range .Site.Menus.main }}
+      <li><a href="{{.URL}}">{{ .Name }}</a></li>
+    {{end}}
   </ul>
 
   <h2>Recent posts</h2>
@@ -24,7 +23,8 @@
 
   <h2>Projects</h2>
   <ul>
-      <li><a href="/">Improved subdl</a></li>
-      <li><a href="/">Python Only</a></li>
+    {{ range .Site.Menus.projects }}
+      <li><a href="{{.URL}}" target="_blank">{{ .Name }}</li>
+    {{end}}
   </ul>
 </div>

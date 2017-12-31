@@ -7,7 +7,9 @@
         {{ .Content }}
     </div>
 
-    {{ partialCached "social.html" . }}
+    {{ if isset .Site.Params "social" }}
+        {{ partialCached "social.html" . }}
+    {{ end }}
   </div>
 
   

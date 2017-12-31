@@ -6,14 +6,8 @@
   <!-- Magnific Popup core JS file -->
   <script src={{ "/js/jquery.magnific-popup.min.js" | relURL }}></script>
   
-  <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-  <script>
-    (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-    function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-    e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-    e.src='//www.google-analytics.com/analytics.js';
-    r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-    ga('create','UA-86990029-1','auto');ga('send','pageview');
-  </script>
+  <!-- Google Analytics -->
+  
+  {{ template "_internal/google_analytics.html" . }}
 </body>
 </html>

@@ -1,12 +1,15 @@
 {{ partialCached "header/head.html" . }}
 
   <div id="main">
+    {{ partial "nav.html" . }}
     <h1 class="animated flipInX"><a href="{{ .Permalink }}">{{ .Title }}</a></h1>
     <p class="post-info animated fadeIn">{{ .FuzzyWordCount }} Words | Approximately {{ .ReadingTime }} Minutes Read | Last Modified on {{ .Lastmod.Format "January 2, 2006" }}
     {{ .Content }}
 
 
-    {{ partialCached "social.html" . }}
+    {{ if isset .Site.Params "social" }}
+        {{ partialCached "social.html" . }}
+    {{ end }}
   </div>
 
   
