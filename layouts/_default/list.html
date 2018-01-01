@@ -4,19 +4,30 @@
     {{ partial "nav.html" . }}
 
 
-    <h2>All posts</h2>
-      <ul>
-        {{ range .Site.RegularPages }}
-          {{ if eq .Type "posts" }}
-            <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-          {{ end }}
+    <!-- Groups content according to content section.-->
+    {{ range $.Site.RegularPages.GroupBy "Section" }}
+    <!-- Checks for existence of _index.md for a section; if available, pulls from "title" in front matter -->
+    {{ with $.Site.GetPage "section" .Key }}
+    <h3>{{.Title}}</h3>
+    {{ else }}
+    <!-- If no _index.md is available, ".Key" defaults to the section title and filters to title casing -->
+    <h3>{{ .Key | title }}</h3>
+    {{ end }}
+    <ul>
+        {{ range $.Site.RegularPages.ByDate }}
+        <li>
+        <a href="{{ .Permalink }}">{{ .Title }}</a>
+        <div class="meta">{{ .Date.Format "Mon, Jan 2, 2006" }}</div>
+        </li>
         {{ end }}
-      </ul>
+    </ul>
+    {{ end }}
 
 
     {{ if isset .Site.Params "social" }}
         {{ partialCached "social.html" . }}
     {{ end }}
+  
   </div>
 
   
@@ -25,3 +36,5 @@
 
 {{ partial "sidemenu.html" . }}
 {{ partialCached "footer/foot.html" . }}
+
+
