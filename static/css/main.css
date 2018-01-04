@@ -207,6 +207,13 @@ img.logo {
     color: grey;
 }
 
+
+code {
+    font-family: 'Source Code Pro', monospace;
+}
+
+
+
 .mfp-with-zoom .mfp-container,
 .mfp-with-zoom.mfp-bg {
   opacity: 0;
