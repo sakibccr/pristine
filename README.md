@@ -4,6 +4,29 @@ A clean and elegant theme for [Hugo](https://gohugo.io/)
 
 ### Things you need to put on your config.toml
 
+```
+baseURL = "http://yourwebsite.com/"
+languageCode = "en-us"
+title = "My Awesome Site"
+canonifyURLs = true
+enableEmoji = true
+googleAnalytics = "UA-XXXXXX-1"
+```
+
+Replace that `googleAnalytics` variable with one of your own.
+
+Then clone the this repo in your themes directory:
+
+```
+git clone 
+```
+
+Then set the `theme` variable in your config file:
+
+```
+theme = "pristine"
+```
+
 You must put an image in a directory called `img` inside your static directory. Then you must put the name of that image in the `portrait` variable like so:
 
 ```
