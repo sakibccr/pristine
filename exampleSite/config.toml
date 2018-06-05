@@ -1,0 +1,42 @@
+baseURL = "http://example.org/"
+languageCode = "en-us"
+title = "My Awesome Site"
+canonifyURLs = true
+enableEmoji = true
+googleAnalytics = "UA-XXXXXX-1"
+
+theme = "pristine"
+
+[params]
+    portrait = "portrait.jpg"
+
+
+[[menu.main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[menu.main]]
+  name = "All Articles"
+  url = "/all/"
+  weight = 2
+
+
+[[menu.projects]]
+  name = "Pristine - A Hugo Theme"
+  url = "https://github.com/sakibccr/pristine"
+  weight = 1
+
+
+[[params.social]]
+    title = "Email"
+    url = "mailto:john@doe.com"
+[[params.social]]
+    title = "Follow @johndoe"
+    url = "https://twitter.com/johndoe"
+[[params.social]]
+    title = "Github"
+    url = "https://github.com/johndoe"
+[[params.social]]
+    title = "Facebook"
+    url = "https://facebook.com/johndoe"
