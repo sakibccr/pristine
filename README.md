@@ -55,6 +55,7 @@ In the above case, you must create a directory called `all` inside `content` and
 Then there is a menu called *Projects*. You can create it like bellow:
 
 ```
+[[menu.projects]]
   name = "My awesome project"
   url = "https://myawesomeproject.com"
   weight = 1
