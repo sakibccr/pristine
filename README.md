@@ -18,7 +18,8 @@ Replace that `googleAnalytics` variable with one of your own.
 Then clone the this repo in your themes directory:
 
 ```
-git clone https://github.com/sakibccr/pristine.git themes/
+cd themes
+git clone https://github.com/sakibccr/pristine.git
 ```
 
 Then set the `theme` variable in your config file:
