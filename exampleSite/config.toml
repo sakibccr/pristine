@@ -8,7 +8,7 @@ googleAnalytics = "UA-XXXXXX-1"
 theme = "pristine"
 
 [params]
-    portrait = "portrait.jpg"
+    portrait = "img/portrait.jpg"
 
 
 [[menu.main]]
