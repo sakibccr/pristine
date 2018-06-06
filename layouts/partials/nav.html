@@ -2,8 +2,8 @@
 
 <div id="nav">
   {{ if $.Site.Params.portrait }}
-  <a href="/img/{{ $.Site.Params.portrait }}" class="image-link">
-    <img class="logo animated flipInY" src="/img/{{ $.Site.Params.portrait }}"/>
+  <a href="{{ $.Site.Params.portrait | absURL }}" class="image-link">
+    <img class="logo animated flipInY" src="{{ $.Site.Params.portrait | absURL }}"/>
   </a>
   {{ end }}
   
