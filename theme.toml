@@ -6,8 +6,8 @@ license = "MIT"
 licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE.md"
 description = "A clean and simple theme with subtle animations"
 homepage = "https://github.com/sakibccr/pristine"
-tags = ["blog"]
-features = ["blog"]
+tags = ["personal", "blog"]
+features = ["personal", "blog"]
 min_version = "0.31.1"
 
 [author]
