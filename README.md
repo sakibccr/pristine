@@ -28,11 +28,11 @@ Then set the `theme` variable in your config file:
 theme = "pristine"
 ```
 
-You must put an image in a directory called `img` inside your static directory. Then you must put the name of that image in the `portrait` variable like so:
+You must put an image in a directory called `img` inside your static directory. Then you must put the path of that image in the `portrait` variable like so:
 
 ```
 [params]
-    portrait = "portrait.jpg"
+    portrait = "img/portrait.jpg"
 ```
 
 You can set up your main menu. You must create a `_index.md` file in your `content` directory. Then you can make other directories inside the `content` directory and set your menu url accordingly.
