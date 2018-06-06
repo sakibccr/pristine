@@ -1,5 +1,5 @@
 ---
-title: "Another_example_post"
+title: "Another example post"
 date: 2018-06-06T03:01:38+06:00
 draft: false
 ---
