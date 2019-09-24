@@ -14,7 +14,8 @@
 
   <h2>Recent posts</h2>
   <ul>
-    {{ range first 10 .Site.RegularPages }}
+    {{ $recentPosts := default 10 (.Site.Params.recentPosts) }}
+    {{ range first $recentPosts .Site.RegularPages }}
       {{ if eq .Type "posts" }}
         <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
       {{ end }}

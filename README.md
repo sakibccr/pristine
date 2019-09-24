@@ -79,4 +79,12 @@ Another last thing is you can set your social profiles links in the config and t
     url = "https://facebook.com/johndoe"
 ```
 
+The number of recent posts shown in the sidebar can be configured with `params.recentPosts`.
+If not set, it defaults to 10.
+
+```
+[params]
+recentPosts = 5
+```
+
 *PRs and issues are welcome* :thumbsup: :pizza:
